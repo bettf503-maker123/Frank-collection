@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frank Collection | Fashion & Style</title>
+<meta name="description" content="Frank Collection - stylish clothes at affordable prices.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f7f7;color:#171717;line-height:1.5}
+header{background:#111;color:#fff;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:24px;font-weight:800;letter-spacing:.5px}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{background:linear-gradient(135deg,#111,#333);color:#fff;padding:75px 6%;text-align:center}
+.hero h1{font-size:clamp(38px,8vw,68px);margin-bottom:12px}
+.hero p{font-size:18px;color:#ddd;margin-bottom:25px}
+.btn{display:inline-block;background:#fff;color:#111;text-decoration:none;padding:13px 22px;border-radius:30px;font-weight:700}
+section{padding:55px 6%;max-width:1200px;margin:auto}
+.title{text-align:center;margin-bottom:28px}
+.title h2{font-size:32px}
+.title p{color:#666;margin-top:6px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 5px 20px #00000012}
+.photo{height:250px;background:#e7e7e7;display:flex;align-items:center;justify-content:center;font-size:70px}
+.card-body{padding:18px}
+.card h3{margin-bottom:5px}
+.price{font-size:20px;font-weight:800;margin:10px 0}
+.order{display:block;text-align:center;background:#111;color:#fff;padding:11px;border-radius:9px;text-decoration:none;font-weight:700}
+.about{background:#fff;border-radius:18px;padding:30px;max-width:850px;margin:auto;text-align:center}
+.contact{background:#111;color:#fff;text-align:center;max-width:none}
+.contact p{color:#ddd;margin:8px 0 20px}
+.whatsapp{background:#25D366;color:#fff}
+footer{background:#080808;color:#aaa;text-align:center;padding:22px;font-size:14px}
+@media(max-width:650px){nav{display:none}.hero{padding:55px 6%}section{padding:42px 5%}.photo{height:220px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">FRANK COLLECTION</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <h1>Frank Collection</h1>
+  <p>Style that speaks for you.</p>
+  <a class="btn" href="#shop">Shop Now</a>
+</section>
+
+<section id="shop">
+  <div class="title">
+    <h2>Our Collection</h2>
+    <p>Choose your style and order directly on WhatsApp.</p>
+  </div>
+
+  <div class="products">
+    <article class="card">
+      <div class="photo">👕</div>
+      <div class="card-body">
+        <h3>Classic T-Shirt</h3><p>Comfortable everyday wear.</p>
+        <div class="price">KSh 1,200</div>
+        <a class="order" href="https://wa.me/254792558123?text=Hello%20Frank%20Collection,%20I%20want%20to%20order%20the%20Classic%20T-Shirt%20(KSh%201,200)." target="_blank">Order on WhatsApp</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo">👔</div>
+      <div class="card-body">
+        <h3>Smart Shirt</h3><p>Clean look for smart occasions.</p>
+        <div class="price">KSh 2,000</div>
+        <a class="order" href="https://wa.me/254792558123?text=Hello%20Frank%20Collection,%20I%20want%20to%20order%20the%20Smart%20Shirt%20(KSh%202,000)." target="_blank">Order on WhatsApp</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo">👖</div>
+      <div class="card-body">
+        <h3>Classic Jeans</h3><p>Stylish jeans for everyday outfits.</p>
+        <div class="price">KSh 2,500</div>
+        <a class="order" href="https://wa.me/254792558123?text=Hello%20Frank%20Collection,%20I%20want%20to%20order%20the%20Classic%20Jeans%20(KSh%202,500)." target="_blank">Order on WhatsApp</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="photo">🧥</div>
+      <div class="card-body">
+        <h3>Casual Jacket</h3><p>Perfect for a modern casual look.</p>
+        <div class="price">KSh 3,500</div>
+        <a class="order" href="https://wa.me/254792558123?text=Hello%20Frank%20Collection,%20I%20want%20to%20order%20the%20Casual%20Jacket%20(KSh%203,500)." target="_blank">Order on WhatsApp</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="about">
+  <div class="title"><h2>About Frank Collection</h2></div>
+  <div class="about">
+    <p>Welcome to <strong>Frank Collection</strong>, your destination for stylish and affordable clothing. Browse our collection, choose your favorite item, and contact us directly to place your order.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="title"><h2>Contact Us</h2><p>Ready to order? Talk to Frank Collection.</p></div>
+  <p><strong>Phone:</strong> 0792 558 123</p>
+  <a class="btn whatsapp" href="https://wa.me/254792558123?text=Hello%20Frank%20Collection,%20I%20would%20like%20to%20make%20an%20order." target="_blank">Chat on WhatsApp</a>
+</section>
+</main>
+
+<footer>
+  © 2026 Frank Collection. All rights reserved.
+</footer>
+</body>
+</html>
